@@ -24,6 +24,15 @@
     )
 
 function printWeather(weather) {
+    let nameElement = document.getElementById('nameEl')
+    nameElement.innerText = weather.name;
+
+    let humElement = document.getElementById('humEl')
+    humElement.innerText = weather.main.humidity;
+
+    let timeElement = document.getElementById('timeEl')
+    timeElement.innerText = weather.timezone;
+    //
     let tempElement = document.getElementById('tempEl')
     tempElement.innerText = weather.main.temp;
 }
