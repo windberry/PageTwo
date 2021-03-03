@@ -1,7 +1,7 @@
-fetch('https://weather.com/weather/today/l/49.23,28.47?par=google&temp=c')
-.then((response) =>{
-    return response.json();
-})
-.then((data) =>{
-    console.log(data);
-});
+fetch('api.openweathermap.org/data/2.5/weather?id=2172797&appid=b124ec8d5546495f87d1cfc27038a5cc')
+    .then(res => res.json())
+    .then(data =>
+    document.getElementById('root').innerHTML=
+    JSON.stringify(data)
+    )
+
