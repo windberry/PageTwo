@@ -1,17 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href = "style.css">
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        body{
+            background-image: url("https://wallpapers-fenix.eu/full/141216/192118231.jpg");
+        }
+    </style>
 </head>
 <body>
-<h1>Weather pages</h1>
-<h1>Weather pages</h1>
-<h1>Weather pages</h1>
-<h1>Weather pages</h1>
-<h1>Weather pages1</h1>
-<h1>Weather pages1</h1>
+<h1 class="weather"> Weather pages </h1>
 
+<h3 class="weatherTwo"> Weather for today is ... </h3>
+
+<div class ="NameCity">
+    <span>name: </span>
+    <span id="nameEl">+25</span>
+</div>
+
+<button onclick="toggleDiv()">Change</button>
+
+<div class="temp">
+    <span>temp: </span>
+<!--    <button onclick="Celsius" id="tempEl"></button>-->
+    <span id="tempEl">+45</span>
+</div>
+
+
+<div class="tempo">
+    <span>temp: </span>
+    <!--    <button onclick="Celsius" id="tempEl"></button>-->
+    <span id="tempoEl">+45</span>
+</div>
+
+<div class="hum">
+    <span>humidity: </span>
+    <span id="humEl">+25</span>
+</div>
+
+<div class="time">
+    <span>timezone: </span>
+    <span id="timeEl">6000</span>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
