@@ -1,26 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+       td{
+           padding: 10px;
+       }
+    </style>
 </head>
 <body>
-<div>
-    <span>Валюта1</span>
-    <span id = "ccyEl">22</span>
-</div>
-<div>
-    <span>Валюта2</span>
-    <span id = "base_ccyEl"></span>
-</div>
-<div>
-    <span>Покупка</span>
-    <span id = "buyEl"></span>
-</div>
-<div>
-    <span>Продать</span>
-    <span id = "saleEl"></span>
-</div>
+<h1>Information about currency</h1>
+<!--<table>-->
+<!--    <th>Валюта1</th>-->
+<!--    <th>Валюта2</th>-->
+<!--    <th>Покупка</th>-->
+<!--    <th>Продать</th>-->
+<!--    <tr><td id = "ccyEl1"></td><td id = "base_ccyEl1"></td><td id = "buyEl1"></td><td id = "saleEl1"></td></tr>-->
+<!--    <tr><td id = "ccyEl2"></td><td id = "base_ccyEl2"></td><td id = "buyEl2"></td><td id = "saleEl2"></td></tr>-->
+<!--    <tr><td id = "ccyEl3"></td><td id = "base_ccyEl3"></td><td id = "buyEl3"></td><td id = "saleEl3"></td></tr>-->
+<!--    <tr><td id = "ccyEl4"></td><td id = "base_ccyEl4"></td><td id = "buyEl4"></td><td id = "saleEl4"></td></tr>-->
+<!--</table>-->
 <script src = 'ScriptCurrency.js'></script>
+<div>
+    <span>Валюта</span>
+    <button onclick = "ConvertUSD()" id = "ccyEl1">22</button>
+    <button onclick = "ConvertEUR()" id = "ccyEl2">22</button>
+    <button onclick = "ConvertRUR()" id = "ccyEl3">22</button>
+    <button onclick = "ConvertBTC()" id = "ccyEl4">22</button>
+</div>
+<div id = "out_buy">
+
+</div>
+
+<!--<div>-->
+<!--    <span>Валюта2</span>-->
+<!--    <span id = "base_ccyEl1"></span>-->
+<!--    <span id = "base_ccyEl2"></span>-->
+<!--    <span id = "base_ccyEl3"></span>-->
+<!--    <span id = "base_ccyEl4"></span>-->
+<!--</div>-->
+<!--<div>-->
+<!--    <span>Покупка</span>-->
+<!--    <span id = "buyEl1"></span>-->
+<!--    <span id = "buyEl2"></span>-->
+<!--    <span id = "buyEl3"></span>-->
+<!--    <span id = "buyEl4"></span>-->
+<!--</div>-->
+<!--<div>-->
+<!--    <span>Продать</span>-->
+<!--    <span id = "saleEl1"></span>-->
+<!--    <span id = "saleEl2"></span>-->
+<!--    <span id = "saleEl3"></span>-->
+<!--    <span id = "saleEl4"></span>-->
+<!--</div>-->
+<!--<div>-->
+<!--    <button id = "ArrCurrency"></button>-->
+<!--</div>-->
 </body>
 </html>
